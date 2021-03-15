@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     public AudioClip congrats;
     public AudioSource speaker;
 
-    void Start()
+    void Awake()
     {
         speaker.PlayOneShot(congrats);
     }
